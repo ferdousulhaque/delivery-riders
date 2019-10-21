@@ -1,0 +1,36 @@
+{
+  "name": "deliveryapp",
+  "version": "1.0.0",
+  "description": "Delivery Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "delivery-app"
+  ],
+  "author": "A. S. Md. Ferdousul Haque",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "dialogflow": "^0.10.3",
+    "dotenv": "^8.1.0",
+    "ejs": "~2.5.2",
+    "express": "^4.16.2",
+    "fluent-logger": "^3.2.0",
+    "http-errors": "~1.6.2",
+    "mysql2": "^1.7.0",
+    "pg-promise": "^5.9.7",
+    "redis": "^2.8.0",
+    "request": "^2.83.0",
+    "sequelize": "^5.19.6",
+    "validate.js": "^0.13.1"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
