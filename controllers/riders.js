@@ -34,7 +34,7 @@ function checkRidersNearby(req, res, next) {
     riders = ridersModel.getAllRiders().then((data) => {
       ridersData = data;
       ridersNearby = ridersData.filter((single) => {
-        if(distance(single.lati, single.longi, restaurent_lati, restaurent_longi, 1) < 5){
+        if(distance(single.lati, single.longi, restaurent_lati, restaurent_longi, "K") < 300){
           return true;
         }
       });

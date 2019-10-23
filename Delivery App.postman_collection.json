@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "bb652956-1559-47fb-9583-20be415b710f",
+		"name": "Delivery App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Delivery App Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/riders",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"riders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Rider Add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lati\": 93.14,\n\t\"longi\": 84.24\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/riders/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"riders",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nearby Restaurants",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/riders/nearby?restaurent_id=1&lati=23.99&longi=93.22&mobile=01711084714",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"riders",
+						"nearby"
+					],
+					"query": [
+						{
+							"key": "restaurent_id",
+							"value": "1"
+						},
+						{
+							"key": "lati",
+							"value": "23.99"
+						},
+						{
+							"key": "longi",
+							"value": "93.22"
+						},
+						{
+							"key": "mobile",
+							"value": "01711084714"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
